@@ -1,0 +1,259 @@
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.btn {
+  background-color: #1479ff;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  padding: 18px 19px 18px 21px;
+  border-radius: 5px; }
+  .btn + .btn-hint {
+    margin-top: 15px; }
+
+.btn-hint {
+  font-size: 11px;
+  color: #1479ff; }
+
+.content {
+  max-width: 1060px;
+  margin: 0 auto; }
+
+.logo {
+  height: 21px;
+  padding: 50px; }
+
+.price-info {
+  margin-bottom: 37px; }
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 35px; }
+  .list li {
+    font-weight: 500;
+    color: #48578e;
+    margin-bottom: 15px; }
+    .list li:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
+      height: 20px;
+      width: 20px;
+      background-image: url("../images/checkbox.png");
+      background-size: contain; }
+
+.title-main {
+  font-size: 48px;
+  font-weight: 500;
+  color: #2c365c;
+  margin-top: 5px;
+  margin-bottom: 15px; }
+
+.pre-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  color: #2c365c; }
+
+.section-main {
+  margin-bottom: 153px;
+  padding-right: 49%; }
+  .section-main .bg-main {
+    position: absolute;
+    top: -1%;
+    left: 35%;
+    width: 90%; }
+  .section-main .text {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #d3d3d3; }
+  .section-main .price-formatted {
+    color: #108ef3; }
+
+.price-formatted {
+  font-size: 38px;
+  font-weight: bold;
+  margin-right: 40px; }
+  .price-formatted > * {
+    vertical-align: middle; }
+  .price-formatted .price {
+    font-size: 54px; }
+    .price-formatted .price .currency {
+      font-size: 20px; }
+    .price-formatted .price .sub-text {
+      font-size: 14px; }
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  word-spacing: -0.3em; }
+  .price .currency,
+  .price .sub-text {
+    font-weight: 500;
+    font-size: 12px; }
+  .price .currency {
+    vertical-align: super; }
+  .price .sub-text {
+    vertical-align: baseline; }
+  .price.old {
+    position: relative;
+    color: #cacaca;
+    padding: 0 5px; }
+    .price.old:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      left: 0;
+      border-bottom: 2px solid #cacaca; }
+
+.section-feedbacks-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px; }
+
+.feedback-card {
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #0071c4, #5957ff);
+  box-sizing: border-box;
+  color: white;
+  padding: 60px 99px 40px;
+  width: calc(50% - 10px);
+  text-align: center;
+  position: relative; }
+  .feedback-card:before {
+    background-size: contain;
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -1; }
+  .feedback-card:nth-child(1):before {
+    background-image: url("../images/purpleBubble.png");
+    height: 65px;
+    width: 67px;
+    top: -32px;
+    left: -16px; }
+  .feedback-card:nth-child(2):before {
+    background-image: url("../images/purpleBubble2.png");
+    height: 32px;
+    width: 75px;
+    bottom: -16px;
+    right: -19px; }
+  .feedback-card > * {
+    margin: 0; }
+  .feedback-card .feedback-text {
+    margin-bottom: 20px; }
+  .feedback-card .feedback-author {
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 34px; }
+
+.section-deliver,
+.section-story,
+.section-reach-customers {
+  text-align: center;
+  margin-bottom: 150px; }
+  .section-deliver .title,
+  .section-story .title,
+  .section-reach-customers .title {
+    font-size: 36px;
+    font-weight: 500;
+    color: #2c365c;
+    margin-top: 0;
+    margin-bottom: 15px; }
+  .section-deliver .text,
+  .section-story .text,
+  .section-reach-customers .text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 642px;
+    margin: 0 auto 65px;
+    color: #48578e; }
+
+.section-deliver .img-plane {
+  width: 100%; }
+
+.section-story .steps-list {
+  display: flex;
+  margin-bottom: 100px; }
+.section-story .step img {
+  margin-bottom: 20px; }
+.section-story .step p {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 35px;
+  color: #414b73; }
+.section-story .text {
+  margin-bottom: 113px; }
+
+.right-sided-quote {
+  margin-left: 50%;
+  color: #48578e;
+  position: relative;
+  padding-left: 50px;
+  text-align: left; }
+  .right-sided-quote .quote-icon {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .right-sided-quote .quote-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 10px; }
+  .right-sided-quote .quote-text {
+    margin: 0; }
+
+.section-video {
+  text-align: center;
+  margin-bottom: 142px; }
+  .section-video .video {
+    height: 425px;
+    width: 770px;
+    margin-bottom: 50px; }
+  .section-video .customers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 98px; }
+
+.section-integrations {
+  text-align: center;
+  margin-top: 150px;
+  color: #2c365c; }
+  .section-integrations header {
+    margin-bottom: 45px; }
+  .section-integrations .title {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #2c365c;
+    display: inline-block;
+    margin-right: 20px; }
+  .section-integrations .link {
+    display: inline-block;
+    vertical-align: middle; }
+  .section-integrations .title-list {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0; }
+  .section-integrations .list-integrations {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .section-integrations .list-integrations li {
+      display: inline; }
+      .section-integrations .list-integrations li:after {
+        content: ","; }
+      .section-integrations .list-integrations li:last-of-type:after {
+        content: ""; }
+
+/*# sourceMappingURL=desktop.css.map */

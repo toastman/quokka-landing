@@ -1,0 +1,20 @@
+{
+  "name": "Quokka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "htmlmin": "html-minifier ./src/index.html -o ./public/index.html --minify-css --collapse-whitespace --remove-comments",
+    "copyImg": "cp -R ./src/images ./public/images",
+    "cssmin": "sass --update ./src/styles:./public/styles --style compressed",
+    "build": "npm run htmlmin & npm run copyImg & npm run cssmin",
+    "start": "sass --watch ./src/styles:./public/styles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-minifier": "^3.5.20"
+  }
+}
