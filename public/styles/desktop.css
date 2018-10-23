@@ -6,6 +6,9 @@ main {
   position: relative;
   overflow: hidden; }
 
+.text-center {
+  text-align: center; }
+
 .btn {
   background-color: #1479ff;
   text-transform: uppercase;
@@ -48,7 +51,7 @@ main {
       margin-right: 15px;
       height: 20px;
       width: 20px;
-      background-image: url("../images/checkbox.png");
+      background: no-repeat url("../images/Check 1x.png");
       background-size: contain; }
 
 .title-main {
@@ -164,28 +167,16 @@ main {
     font-weight: bold;
     margin-bottom: 34px; }
 
-.section-deliver,
-.section-story,
-.section-reach-customers,
-.section-achivements,
-.section-track {
+.section {
   text-align: center;
   margin-bottom: 150px; }
-  .section-deliver .title,
-  .section-story .title,
-  .section-reach-customers .title,
-  .section-achivements .title,
-  .section-track .title {
+  .section .title {
     font-size: 36px;
     font-weight: 500;
     color: #2c365c;
     margin-top: 0;
     margin-bottom: 15px; }
-  .section-deliver .text,
-  .section-story .text,
-  .section-reach-customers .text,
-  .section-achivements .text,
-  .section-track .text {
+  .section .text {
     font-size: 18px;
     text-align: center;
     max-width: 642px;
@@ -363,7 +354,8 @@ main {
   text-align: left;
   position: relative;
   padding-top: 81px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  margin-bottom: 110px; }
   .section-track .letters .letters-bg {
     background-image: linear-gradient(to bottom, #0b6af3, #108ef3);
     border-radius: 20px;
@@ -380,7 +372,8 @@ main {
   padding: 24px 30px;
   display: flex;
   align-items: center;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  font-weight: 500; }
   .section-track .letter:before {
     content: "";
     background-image: url("../images/checkbox.png");
@@ -412,5 +405,116 @@ main {
     padding-left: 20px; }
     .section-track .letter .letter-source:before {
       content: "SOURCE:"; }
+
+.offer-big {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 14px 0 #dddddd;
+  background-color: white;
+  padding: 43px 50px 44px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px; }
+  .offer-big > * {
+    flex-grow: 1;
+    flex-shrink: 0;
+    border-right: 1px solid #979797; }
+  .offer-big > div:last-of-type {
+    border: none; }
+  .offer-big .offer-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2c365c;
+    text-align: left; }
+  .offer-big .btn {
+    padding-left: 64px;
+    padding-right: 64px; }
+
+.phases {
+  display: flex;
+  color: #2c365c;
+  padding-bottom: 90px;
+  border-bottom: 1px solid #cdcdcd; }
+  .phases .phase .phase-number {
+    letter-spacing: 0.7px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px; }
+  .phases .phase .phase-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 20px; }
+  .phases .phase .phase-text {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d7d7d7;
+    min-height: 90px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #414b73; }
+  .phases .phase .phase-integrations {
+    font-size: 12px; }
+  .phases .phase .phase-number,
+  .phases .phase .phase-content {
+    padding: 0 85px;
+    box-sizing: border-box; }
+  .phases .phase:nth-child(1) {
+    max-width: 320px; }
+    .phases .phase:nth-child(1) .phase-content {
+      border-right: 1px solid #c9c9c9; }
+    .phases .phase:nth-child(1) .phase-number,
+    .phases .phase:nth-child(1) .phase-content {
+      padding-left: 0; }
+  .phases .phase:nth-child(2) {
+    max-width: 420px; }
+  .phases .phase:nth-child(3) {
+    max-width: 325px; }
+    .phases .phase:nth-child(3) .phase-content {
+      border-left: 1px solid #c9c9c9; }
+    .phases .phase:nth-child(3) .phase-number,
+    .phases .phase:nth-child(3) .phase-content {
+      padding-right: 0; }
+
+.list-faq {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-botoom: 38px; }
+  .list-faq .faq {
+    width: 50%;
+    margin-bottom: 30px;
+    max-width: 423px; }
+  .list-faq .faq-title {
+    font-size: 30px;
+    font-weight: 500;
+    color: #2c365c;
+    margin-bottom: 15px; }
+  .list-faq .faq-text {
+    font-size: 18px;
+    color: #48578e; }
+
+.m-b-100 {
+  margin-bottom: 100px; }
+
+.section-roadmap {
+  margin-bottom: 109px; }
+
+.section-faq {
+  margin-bottom: 38px; }
+
+footer {
+  border-top: 1px solid #d1d1d1;
+  text-align: center;
+  padding: 69px 0 90px; }
+  footer img {
+    height: 28px;
+    margin-bottom: 15px; }
+  footer p {
+    font-size: 12px;
+    color: #b4b9cd; }
 
 /*# sourceMappingURL=desktop.css.map */

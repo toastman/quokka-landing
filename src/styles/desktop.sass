@@ -7,6 +7,9 @@ main
   position: relative
   overflow: hidden
 
+.text-center
+  text-align: center
+
 .btn
   background-color: $color-btn
   text-transform: uppercase
@@ -52,7 +55,7 @@ main
       margin-right: 15px
       height: 20px
       width: 20px
-      background-image: url('../images/checkbox.png')
+      background: no-repeat url('../images/Check 1x.png')
       background-size: contain
 
 .title-main
@@ -187,11 +190,7 @@ main
     font-weight: bold
     margin-bottom: 34px
 
-.section-deliver,
-.section-story,
-.section-reach-customers,
-.section-achivements,
-.section-track
+.section
   text-align: center
   margin-bottom: 150px
 
@@ -373,7 +372,6 @@ main
         display: inline-block
         left: 10%
 
-
     .achivement-title,
     .achivement-date
       margin: 0
@@ -422,6 +420,7 @@ main
     position: relative
     padding-top: 81px
     padding-bottom: 50px
+    margin-bottom: 110px
 
     .letters-bg
       background-image: linear-gradient(to bottom, #0b6af3, #108ef3)
@@ -441,6 +440,7 @@ main
     display: flex
     align-items: center
     margin-bottom: 30px
+    font-weight: 500
 
     &:before
       content: ''
@@ -483,4 +483,135 @@ main
       &:before
         content: 'SOURCE:'
 
+.offer-big
+  display: flex
+  align-items: center
+  box-shadow: 0 0 14px 0 #dddddd
+  background-color: white
+  padding: 43px 50px 44px
+  border-radius: 10px
+  text-align: center
+  margin-bottom: 30px
 
+  & > *
+    flex-grow: 1
+    flex-shrink: 0
+    border-right: 1px solid #979797
+
+  & > div:last-of-type
+    border: none
+
+  .offer-text
+    font-size: 30px
+    font-weight: bold
+    color: $color-title
+    text-align: left
+
+  .btn
+    padding-left: 64px
+    padding-right: 64px
+
+.phases
+  display: flex
+  color: $color-title
+  padding-bottom: 90px
+  border-bottom: 1px solid #cdcdcd
+
+  .phase
+    .phase-number
+      letter-spacing: 0.7px
+      font-size: 12px
+      font-weight: bold
+      text-transform: uppercase
+      margin-top: 0
+      margin-bottom: 10px
+
+    .phase-title
+      font-size: 20px
+      font-weight: 500
+      margin-top: 0
+      margin-bottom: 20px
+
+    .phase-text
+      padding-bottom: 20px
+      margin-bottom: 20px
+      border-bottom: 1px solid #d7d7d7
+      min-height: 90px
+      font-size: 12px
+      font-weight: 500
+      color: #414b73
+
+    .phase-integrations
+      font-size: 12px
+
+    .phase-number,
+    .phase-content
+      padding: 0 85px
+      box-sizing: border-box
+
+    &:nth-child(1)
+      max-width: 320px
+
+      .phase-content
+        border-right: 1px solid #c9c9c9
+
+      .phase-number,
+      .phase-content
+        padding-left: 0
+
+    &:nth-child(2)
+      max-width: 420px
+
+    &:nth-child(3)
+      max-width: 325px
+
+      .phase-content
+        border-left: 1px solid #c9c9c9
+
+      .phase-number,
+      .phase-content
+        padding-right: 0
+
+.list-faq
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  text-align: left
+  margin-botoom: 38px
+
+  .faq
+    width: 50%
+    margin-bottom: 30px
+    max-width: 423px
+
+  .faq-title
+    font-size: 30px
+    font-weight: 500
+    color: $color-title
+    margin-bottom: 15px
+
+  .faq-text
+    font-size: 18px
+    color: $color-text
+
+.m-b-100
+  margin-bottom: 100px
+
+.section-roadmap
+  margin-bottom: 109px
+
+.section-faq
+  margin-bottom: 38px
+
+footer
+  border-top: 1px solid #d1d1d1
+  text-align: center
+  padding: 69px 0 90px
+
+  img
+    height: 28px
+    margin-bottom: 15px
+
+  p
+    font-size: 12px
+    color: #b4b9cd
