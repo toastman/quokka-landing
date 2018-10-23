@@ -28,15 +28,24 @@
       font-size: 14px;
       background-color: #fafbff;
     }
+
+    main {
+      margin: 0 auto;
+      min-height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
   </style>
+
+  <link rel="stylesheet" href="styles/all.css">
   <link rel="stylesheet" media="screen and (min-device-width: 1025px)" href="styles/desktop.css">
   <link rel="stylesheet" media="screen and (min-device-width: 768px) and (max-width: 1024px)" href="styles/tablet.css">
-  <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 768px)" href="styles/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 767px)" href="styles/mobile.css">
 </head>
 
 <body>
   <div id="header-sticky">
-    <img class="logo" src="images/quokka-logo.png" alt="">
+    <img height="21" class="logo" src="images/quokka-logo.png" alt="">
     <p class="title">Quokka Lifetime Deal</p>
     <div class="header-actions">
       <div class="btn-hint">Time-limited offer,<br /> 30-day refund policy</div>
@@ -45,9 +54,10 @@
       </a>
     </div>
   </div>
+
   <main>
     <header>
-      <img class="logo" src="images/quokka-logo.png" alt="Quokka logo" title="Quokka logo" />
+      <img height="21" class="logo" src="images/quokka-logo.png" alt="Quokka logo" title="Quokka logo" />
     </header>
 
     <div class="content">
@@ -61,38 +71,52 @@
           message to
           those who ignored your email so they never miss something important from you</p>
 
-        <div class="price-info">
+        <div class="reversed-block">
+          <div>
+            <div class="price-info">
 
-          <span class="price-formatted">
-            <span>Only</span>
-            <span class="price">
-              <span class="currency">$</span>
-              49
-              <span class="sub-text">/lifetime</span>
-            </span>
-          </span>
+              <span class="price-formatted">
+                <span>Only</span>
+                <span class="price">
+                  <span class="currency">$</span>
+                  49
+                  <span class="sub-text">/lifetime</span>
+                </span>
+              </span>
 
-          <span class="price old">
-            <span class="currency">$</span>
-            990
-            <span class="sub-text">/year</span>
-          </span>
+              <span class="price old">
+                <span class="currency">$</span>
+                990
+                <span class="sub-text">/year</span>
+              </span>
 
+            </div>
+
+            <ul class="list">
+              <li>Decide, which email campaigns to track</li>
+              <li>Get early access to 25 upcoming integrations (and 7 existing ones)</li>
+              <li>Get automatically updated custom audiences for retargeting (50K/mo)</li>
+              <li>Stackable Deal: get each 50K emails re-engaged for $49</li>
+              <li>Have access to all future product updates</li>
+            </ul>
+          </div>
+
+          <div>
+            <a class="btn" href="javascript:void(0)">
+              Buy now - 49$/Lifetime
+            </a>
+            <div class="btn-hint">Time-limited offer, 30-day refund policy</div>
+            <img class="bg-main" src="images/Macbook Bubble 1x.png" alt="">
+          </div>
         </div>
 
-        <ul class="list">
-          <li>Decide, which email campaigns to track</li>
-          <li>Get early access to 25 upcoming integrations (and 7 existing ones)</li>
-          <li>Get automatically updated custom audiences for retargeting (50K/mo)</li>
-          <li>Stackable Deal: get each 50K emails re-engaged for $49</li>
-          <li>Have access to all future product updates</li>
-        </ul>
+        <div class="tablet-only">
+          <a class="btn" href="javascript:void(0)">
+            Buy now - 49$/Lifetime
+          </a>
+          <div class="btn-hint">Time-limited offer, 30-day refund policy</div>
+        </div>
 
-        <a class="btn" href="javascript:void(0)">
-          Buy now - 49$/Lifetime
-        </a>
-        <div class="btn-hint">Time-limited offer, 30-day refund policy</div>
-        <img class="bg-main" src="images/Macbook Bubble 1x.png" alt="">
       </section>
 
     </div>
@@ -219,24 +243,27 @@
           <li>Have access to all future product updates</li>
         </ul>
         <div class="price-info">
-          <div class="price old">
-            <span class="currency">$</span>
-            990
-            <span class="sub-text">/year</span>
-          </div>
-
-          <div class="price-formatted">
-            <span>Only</span>
-            <span class="price">
+          <div class="reversed-block">
+            <div class="price old">
               <span class="currency">$</span>
-              49
-              <span class="sub-text">/lifetime</span>
-            </span>
+              990
+              <span class="sub-text">/year</span>
+            </div>
+
+            <div class="price-formatted">
+              <span>Only</span>
+              <span class="price">
+                <span class="currency">$</span>
+                49
+                <span class="sub-text">/lifetime</span>
+              </span>
+            </div>
           </div>
+          <p class="tablet-only">FOR 50K EMAILS/MONTH</p>
           <a class="btn" href="javascript:void(0)">
             Buy now - 49$/Lifetime
           </a>
-          <div class="btn-hint">Time-limited offer,<br /> 30-day refund policy</div>
+          <div class="btn-hint">Time-limited offer, 30-day refund policy</div>
         </div>
       </div>
     </section>

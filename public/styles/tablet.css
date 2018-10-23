@@ -1,2 +1,181 @@
-body{background-color:blue}
+@charset "UTF-8";
+#header-sticky {
+  display: none; }
+
+.content {
+  margin: 0 50px; }
+
+.section-main {
+  margin-bottom: 82px;
+  text-align: center; }
+  .section-main .pre-title {
+    display: none; }
+  .section-main .reversed-block {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse; }
+  .section-main .title-main {
+    font-size: 40px;
+    font-weight: 500;
+    color: #2c365c;
+    margin: 0;
+    margin-bottom: 15px; }
+  .section-main .text {
+    padding-bottom: 30px;
+    max-width: 487px;
+    margin: 0 auto;
+    border: none; }
+  .section-main .btn-hint {
+    margin-top: 15px;
+    font-size: 11px;
+    color: #1479ff;
+    margin-bottom: 21px; }
+  .section-main .bg-main {
+    position: relative;
+    max-height: 661px;
+    margin-left: -150px;
+    top: 0;
+    left: 0;
+    width: auto; }
+  .section-main .price-formatted {
+    color: #108ef3;
+    margin-right: 40px; }
+  .section-main .tablet-only {
+    text-align: left;
+    padding-bottom: 51px;
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 35px; }
+
+.section-feedbacks-list {
+  flex-wrap: wrap; }
+
+.feedback-card {
+  width: 100%;
+  margin-bottom: 50px; }
+
+.section .title {
+  font-size: 30px;
+  margin-bottom: 23px; }
+.section .text {
+  margin: 0 auto;
+  text-align: center;
+  color: #48578e;
+  max-width: 476px; }
+
+.section-deliver {
+  margin-bottom: 100px; }
+  .section-deliver .img-plane {
+    width: 100%; }
+  .section-deliver .text {
+    margin-bottom: 30px; }
+
+.section-story {
+  margin-bottom: 100px; }
+  .section-story .text {
+    margin-bottom: 50px; }
+  .section-story .steps-list {
+    justify-content: space-around;
+    margin-bottom: 50px; }
+  .section-story .step {
+    max-width: 200px; }
+    .section-story .step p {
+      padding: 0 10px; }
+    .section-story .step img {
+      width: 100%; }
+
+.right-sided-quote {
+  padding-left: 40px;
+  margin-left: 40%; }
+  .right-sided-quote .quote-icon {
+    height: 20px;
+    width: 20px; }
+  .right-sided-quote .quote-title {
+    font-size: 14px; }
+
+.section-video {
+  margin-bottom: 100px; }
+  .section-video .video {
+    height: 288px;
+    width: 522px;
+    margin-bottom: 40px; }
+
+.section-reach-customers {
+  margin-bottom: 71px; }
+
+.section-integrations {
+  margin-top: 86px;
+  margin-bottom: 55px; }
+  .section-integrations header {
+    margin-bottom: 28px; }
+  .section-integrations .title {
+    font-size: 15px;
+    margin-right: 15px; }
+  .section-integrations .list {
+    padding-right: 45px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .section-integrations .link {
+    height: 23px; }
+    .section-integrations .link img {
+      height: 100%; }
+  .section-integrations .title-list,
+  .section-integrations .list-integrations {
+    font-size: 12px; }
+  .section-integrations .title-list {
+    font-weight: 500; }
+
+.price-container {
+  flex-direction: column-reverse; }
+  .price-container .reversed-block {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 11px; }
+    .price-container .reversed-block .price-formatted,
+    .price-container .reversed-block .price.old {
+      margin: 0; }
+    .price-container .reversed-block .price-formatted {
+      margin-right: 30px; }
+  .price-container .tablet-only {
+    text-transform: uppercase;
+    color: #008efb;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 30px; }
+  .price-container .btn-hint {
+    color: #1479ff;
+    font-size: 11px; }
+
+.section-achivements {
+  margin-bottom: 81px; }
+  .section-achivements .title {
+    margin-bottom: 30px; }
+  .section-achivements .achivements {
+    margin-top: 30px; }
+    .section-achivements .achivements .achivement {
+      padding: 33px 45px 34px 88px; }
+      .section-achivements .achivements .achivement:before {
+        width: 35px;
+        height: 33px;
+        left: 10%; }
+    .section-achivements .achivements .achivement-title {
+      font-size: 15px; }
+    .section-achivements .achivements .achivement-date {
+      font-size: 11px; }
+
+.section-feedback {
+  padding-left: 117px;
+  margin-bottom: 100px; }
+  .section-feedback .feedback-text {
+    margin-bottom: 16px; }
+    .section-feedback .feedback-text:before {
+      content: "“";
+      position: absolute;
+      font-size: 50px;
+      top: -35px;
+      left: -35px; }
+  .section-feedback .feedback-author-position {
+    font-size: 11px; }
+
 /*# sourceMappingURL=tablet.css.map */

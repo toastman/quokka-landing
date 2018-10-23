@@ -1,2 +1,223 @@
-body
-  background-color: blue
+@import './variables'
+
+#header-sticky
+  display: none
+
+.content
+  margin: 0 50px
+
+.section-main
+  margin-bottom: 82px
+  text-align: center
+
+  .pre-title
+    display: none
+
+  .reversed-block
+    display: flex
+    flex-direction: column
+    flex-flow: column-reverse
+
+  .title-main
+    font-size: 40px
+    font-weight: 500
+    color: $color-title
+    margin: 0
+    margin-bottom: 15px
+
+  .text
+    padding-bottom: 30px
+    max-width: 487px
+    margin: 0 auto
+    border: none
+
+  .btn-hint
+    margin-top: 15px
+    font-size: 11px
+    color: $color-btn
+    margin-bottom: 21px
+
+  .bg-main
+    position: relative
+    max-height: 661px
+    margin-left: -150px
+    top: 0
+    left: 0
+    width: auto
+
+  .price-formatted
+    color: $color-blue
+    margin-right: 40px
+
+  .tablet-only
+    text-align: left
+    padding-bottom: 51px
+    border-bottom: 1px solid #d3d3d3
+    margin-bottom: 35px
+
+.section-feedbacks-list
+  flex-wrap: wrap
+
+.feedback-card
+  width: 100%
+  margin-bottom: 50px
+
+.section
+  .title
+    font-size: 30px
+    margin-bottom: 23px
+
+  .text
+    margin: 0 auto
+    text-align: center
+    color: $color-text
+    max-width: 476px
+
+.section-deliver
+  margin-bottom: 100px
+
+  .img-plane
+    width: 100%
+
+  .text
+    margin-bottom: 30px
+
+.section-story
+  margin-bottom: 100px
+
+  .text
+    margin-bottom: 50px
+
+  .steps-list
+    justify-content: space-around
+    margin-bottom: 50px
+
+  .step
+    max-width: 200px
+
+    p
+      padding: 0 10px
+
+    img
+      width: 100%
+
+.right-sided-quote
+  padding-left: 40px
+  margin-left: 40%
+
+  .quote-icon
+    height: 20px
+    width: 20px
+
+  .quote-title
+    font-size: 14px
+
+.section-video
+  margin-bottom: 100px
+
+  .video
+    height: 288px
+    width: 522px
+    margin-bottom: 40px
+
+.section-reach-customers
+  margin-bottom: 71px
+
+.section-integrations
+  margin-top: 86px
+  margin-bottom: 55px
+
+  header
+    margin-bottom: 28px
+
+  .title
+    font-size: 15px
+    margin-right: 15px
+
+  .list
+    padding-right: 45px
+    padding-top: 30px
+    padding-bottom: 30px
+
+  .link
+    height: 23px
+
+    img
+      height: 100%
+
+  .title-list,
+  .list-integrations
+    font-size: 12px
+
+  .title-list
+    font-weight: 500
+
+.price-container
+  flex-direction: column-reverse
+
+  .reversed-block
+    display: flex
+    flex-direction: row-reverse
+    align-items: center
+    justify-content: flex-end
+    margin-bottom: 11px
+
+    .price-formatted,
+    .price.old
+      margin: 0
+
+    .price-formatted
+      margin-right: 30px
+
+  .tablet-only
+    text-transform: uppercase
+    color: #008efb
+    font-size: 12px
+    font-weight: bold
+    margin-bottom: 30px
+
+  .btn-hint
+    color: $color-btn
+    font-size: 11px
+
+.section-achivements
+  margin-bottom: 81px
+
+  .title
+    margin-bottom: 30px
+
+  .achivements
+    margin-top: 30px
+
+    .achivement
+      padding: 33px 45px 34px 88px
+
+      &:before
+        width: 35px
+        height: 33px
+        left: 10%
+
+    .achivement-title
+      font-size: 15px
+
+    .achivement-date
+      font-size: 11px
+
+.section-feedback
+  padding-left: 117px
+  margin-bottom: 100px
+
+  .feedback-text
+    margin-bottom: 16px
+
+    &:before
+      content: '“'
+      position: absolute
+      font-size: 50px
+      top: -35px
+      left: -35px
+
+  .feedback-author-position
+    font-size: 11px
+
+

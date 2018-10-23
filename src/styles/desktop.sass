@@ -2,13 +2,6 @@
 
 main
   max-width: 1440px
-  margin: 0 auto
-  min-height: 100%
-  position: relative
-  overflow: hidden
-
-.text-center
-  text-align: center
 
 #header-sticky
   display: flex
@@ -47,15 +40,6 @@ main
       margin-right: 30px
 
 .btn
-  background-color: $color-btn
-  text-transform: uppercase
-  text-decoration: none
-  display: inline-block
-  color: white
-  font-weight: bold
-  padding: 18px 19px 18px 21px
-  border-radius: 5px
-
   & + .btn-hint
     margin-top: 15px
 
@@ -65,34 +49,12 @@ main
 
 .content
   max-width: 1060px
-  margin: 0 auto
 
 .logo
-  height: 21px
   padding: 50px
 
 .price-info
   margin-bottom: 37px
-
-.list
-  list-style: none
-  padding: 0
-  margin-bottom: 35px
-
-  li
-    font-weight: 500
-    color: #48578e
-    margin-bottom: 15px
-
-    &:before
-      content: ''
-      display: inline-block
-      vertical-align: middle
-      margin-right: 15px
-      height: 20px
-      width: 20px
-      background: no-repeat url('../images/Check 1x.png')
-      background-size: contain
 
 .title-main
   font-size: 48px
@@ -126,168 +88,42 @@ main
     color: $color-blue
     margin-right: 40px
 
-.price-formatted
-  font-size: 38px
-  font-weight: bold
-
-  & > *
-    vertical-align: middle
-
-  .price
-    font-size: 54px
-
-    .currency
-      font-size: 20px
-
-    .sub-text
-      font-size: 14px
-
-.price
-  font-size: 24px
-  font-weight: bold
-  word-spacing: -0.3em
-
-  .currency,
-  .sub-text
-    font-weight: 500
-    font-size: 12px
-
-  .currency
-    vertical-align: super
-
-  .sub-text
-    vertical-align: baseline
-
-  &.old
-    position: relative
-    color: $color-gray
-    padding: 0 5px
-    display: inline-block
-
-    &:before
-      content: ''
-      position: absolute
-      top: 50%
-      width: 100%
-      left: 0
-      border-bottom: 2px solid $color-gray
-
 .section-feedbacks-list
-  display: flex
   justify-content: space-between
   margin-bottom: 150px
 
 .feedback-card
-  border-radius: 10px
-  background-image: linear-gradient(to bottom, #0071c4, #5957ff)
-  box-sizing: border-box
-  color: white
-  padding: 60px 99px 40px
   width: calc(50% - 10px)
-  text-align: center
-  position: relative
-
-  &:before
-    background-size: contain
-    content: ''
-    position: absolute
-    display: block
-    z-index: -1
-
-  &:after
-    content: '“'
-    font-size: 50px
-    position: absolute
-    top: 40px
-    left: 40px
-
-  &:nth-child(1):before
-    background-image: url('../images/purpleBubble.png')
-    height: 65px
-    width: 67px
-    top: -32px
-    left: -16px
-
-  &:nth-child(2):before
-    background-image: url('../images/purpleBubble2.png')
-    height: 32px
-    width: 75px
-    bottom: -16px
-    right: -19px
-
-  & > *
-    margin: 0
-
-  .feedback-text
-    margin-bottom: 20px
-
-  .feedback-author
-    font-size: 11px
-    font-weight: bold
-    margin-bottom: 34px
 
 .section
-  text-align: center
   margin-bottom: 150px
 
   .title
     font-size: 36px
-    font-weight: 500
-    color: $color-title
-    margin-top: 0
-    margin-bottom: 15px
 
   .text
     font-size: 18px
-    text-align: center
     max-width: 642px
     margin: 0 auto 65px
-    color: $color-text
 
 .section-deliver
   .img-plane
     width: 100%
 
 .section-story
-  .steps-list
-    display: flex
-    margin-bottom: 100px
-
-  .step
-    img
-      margin-bottom: 20px
-    p
-      font-size: 12px
-      font-weight: 500
-      padding: 0 35px
-      color: #414b73
-
   .text
     margin-bottom: 113px
 
+  .steps-list
+    margin-bottom: 100px
+
 .right-sided-quote
   margin-left: 50%
-  color: $color-text
-  position: relative
-  padding-left: 50px
-  text-align: left
-
-  .quote-icon
-    position: absolute
-    left: 0
-    top: 0
 
   .quote-title
     font-size: 18px
-    font-weight: 500
-    margin-top: 5px
-    margin-bottom: 10px
-
-  .quote-text
-    margin: 0
 
 .section-video
-  text-align: center
   margin-bottom: 142px
 
   .video
@@ -296,30 +132,18 @@ main
     margin-bottom: 50px
 
   .customers
-    display: flex
-    justify-content: space-between
-    align-items: center
     padding: 0 98px
 
 .section-integrations
   text-align: center
   margin-top: 150px
-  color: $color-title
 
   header
     margin-bottom: 45px
 
   .title
     font-size: 18px
-    font-weight: 500
-    text-transform: uppercase
-    color: $color-title
-    display: inline-block
     margin-right: 20px
-
-  .link
-    display: inline-block
-    vertical-align: middle
 
   .list
     text-align: left
@@ -351,7 +175,6 @@ main
         content: ''
 
   .price-container
-    display: flex
     margin-bottom: 100px
 
     .list
@@ -361,14 +184,11 @@ main
     .price-info
       padding-left: 53px
       text-align: center
-      padding-top: 10px
-      padding-bottom: 10px
 
     .price.old
       margin-bottom: 5px
 
     .price-formatted
-      color: $color-blue
       margin-bottom: 30px
 
     .btn
@@ -384,54 +204,27 @@ main
     font-size: 24px
 
   .achivements
-    display: flex
-    box-shadow: 0 0 14px 0 #dddddd
-    border-radius: 10px
-    background-color: white
     margin-top: 51px
-    text-align: left
 
     .achivement
-      text-decoration: none
       padding: 51px 84px 52px 146px
-      position: relative
-      flex-grow: 1
-
-      &:nth-child(1)
-        border-right: 1px solid #dadada
 
       &:before
-        content: ''
-        position: absolute
-        background: no-repeat url('../images/star.png')
         width: 45px
         height: 43px
-        display: inline-block
         left: 10%
 
     .achivement-title
       font-size: 24px
-      color: $color-title
-      font-weight: bold
 
     .achivement-date
       font-size: 18px
-      color: $color-text
 
 .section-feedback
-  position: relative
   padding-left: 117px
-  box-sizing: border-box
-  color: $color-text
   margin-bottom: 150px
 
-  .feedback-author-img
-    position: absolute
-    left: 0
-    top: 0
-
   .feedback-text
-    position: relative
     margin-bottom: 16px
 
     &:before
@@ -440,12 +233,6 @@ main
       font-size: 50px
       top: -35px
       left: -35px
-
-  .feedback-author,
-  .feedback-author-position
-    font-weight: bold
-    color: #404b77
-    margin: 0
 
   .feedback-author-position
     font-size: 11px

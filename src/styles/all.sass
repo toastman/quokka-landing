@@ -1,0 +1,315 @@
+@import './variables'
+
+.tablet-only
+  display: none
+
+@media screen and (min-device-width: 768px) and (max-width: 1024px)
+  .tablet-only
+    display: block
+
+.btn
+  background-color: #1479ff
+  text-transform: uppercase
+  text-decoration: none
+  display: inline-block
+  color: white
+  font-weight: bold
+  padding: 18px 19px 18px 21px
+  border-radius: 5px
+
+.logo
+  padding: 50px
+
+.content
+  margin: 0 auto
+
+.text-center
+  text-align: center
+
+.text-left
+  text-align: left
+
+.price-formatted
+  font-size: 38px
+  font-weight: bold
+
+  & > *
+    vertical-align: middle
+
+  .price
+    font-size: 54px
+
+    .currency
+      font-size: 20px
+
+    .sub-text
+      font-size: 14px
+
+.price
+  font-size: 24px
+  font-weight: bold
+  word-spacing: -0.3em
+
+  .currency,
+  .sub-text
+    font-weight: 500
+    font-size: 12px
+
+  .currency
+    vertical-align: super
+
+  .sub-text
+    vertical-align: baseline
+
+  &.old
+    position: relative
+    color: $color-gray
+    padding: 0 5px
+    display: inline-block
+
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      width: 100%
+      left: 0
+      border-bottom: 2px solid $color-gray
+
+.list
+  list-style: none
+  padding: 0
+  margin-bottom: 35px
+  text-align: left
+
+  li
+    font-weight: 500
+    color: #48578e
+    margin-bottom: 15px
+
+    &:before
+      content: ''
+      display: inline-block
+      vertical-align: middle
+      margin-right: 15px
+      height: 20px
+      width: 20px
+      background: no-repeat url('../images/Check 1x.png')
+      background-size: contain
+
+.section-feedbacks-list
+  display: flex
+
+.feedback-card
+  border-radius: 10px
+  background-image: linear-gradient(to bottom, #0071c4, #5957ff)
+  box-sizing: border-box
+  color: white
+  padding: 60px 99px 40px
+  text-align: center
+  position: relative
+
+  &:before
+    background-size: contain
+    content: ''
+    position: absolute
+    display: block
+    z-index: -1
+
+  &:after
+    content: '“'
+    font-size: 50px
+    position: absolute
+    top: 40px
+    left: 40px
+
+  &:nth-child(1):before
+    background-image: url('../images/purpleBubble.png')
+    height: 65px
+    width: 67px
+    top: -32px
+    left: -16px
+
+  &:nth-child(2):before
+    background-image: url('../images/purpleBubble2.png')
+    height: 32px
+    width: 75px
+    bottom: -16px
+    right: -19px
+
+  & > *
+    margin: 0
+
+  .feedback-text
+    margin-bottom: 20px
+
+  .feedback-author
+    font-size: 11px
+    font-weight: bold
+    margin-bottom: 34px
+
+.section
+  text-align: center
+
+  .title
+    font-weight: 500
+    color: $color-title
+    margin-top: 0
+    margin-bottom: 15px
+
+  .text
+    text-align: center
+    color: $color-text
+
+.section-story
+  .steps-list
+    display: flex
+
+  .step
+    img
+      margin-bottom: 20px
+    p
+      font-size: 12px
+      font-weight: 500
+      padding: 0 35px
+      color: #414b73
+
+.right-sided-quote
+  color: $color-text
+  position: relative
+  padding-left: 50px
+  text-align: left
+
+  .quote-icon
+    position: absolute
+    left: 0
+    top: 0
+
+  .quote-title
+    font-weight: 500
+    margin-top: 5px
+    margin-bottom: 10px
+
+  .quote-text
+    margin: 0
+
+.section-video
+  text-align: center
+
+  .customers
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.section-integrations
+  color: $color-title
+
+  .title
+    font-weight: 500
+    text-transform: uppercase
+    color: $color-title
+    display: inline-block
+
+  .link
+    display: inline-block
+    vertical-align: middle
+
+  .list
+    text-align: left
+
+  .title-list
+    font-weight: bold
+    margin: 0
+
+  .list-integrations
+    list-style-type: none
+    padding: 0
+    margin: 0
+    padding-bottom: 50px
+    margin-bottom: 40px
+    border-bottom: 1px solid #cdcdcd
+
+    li
+      display: inline
+
+      &:after
+        content: ','
+
+      &:last-of-type:after
+        content: ''
+
+  .price-container
+    display: flex
+
+    .list
+      flex-shrink: 0
+      margin-top: 0
+
+    .price-info
+      padding-top: 10px
+      padding-bottom: 10px
+
+    .price-formatted
+      color: $color-blue
+
+    .btn
+      margin-bottom: 30px
+
+  .list,
+  .price-info
+    margin: 0
+
+.section-achivements
+  .achivements
+    display: flex
+    box-shadow: 0 0 14px 0 #dddddd
+    border-radius: 10px
+    background-color: white
+    text-align: left
+
+    .achivement
+      text-decoration: none
+      position: relative
+      flex-grow: 1
+
+      &:nth-child(1)
+        border-right: 1px solid #dadada
+
+      &:before
+        content: ''
+        position: absolute
+        background: no-repeat url('../images/star.png')
+        background-size: contain
+        display: inline-block
+
+    .achivement-title
+      color: $color-title
+      font-weight: bold
+
+    .achivement-date
+      color: $color-text
+
+.section-feedback
+  position: relative
+  box-sizing: border-box
+  color: $color-text
+
+  .feedback-author-img
+    position: absolute
+    left: 0
+    top: 0
+
+  .feedback-text
+    position: relative
+
+    &:before
+      content: '“'
+      position: absolute
+      font-size: 50px
+      top: -35px
+      left: -35px
+
+  .feedback-author,
+  .feedback-author-position
+    font-weight: bold
+    color: #404b77
+    margin: 0
