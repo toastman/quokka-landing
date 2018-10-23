@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "htmlmin": "html-minifier ./src/index.html -o ./public/index.html --minify-css --collapse-whitespace --remove-comments",
-    "copyImg": "cp -R ./src/images ./public/images",
+    "copyImg": "cp -R ./src/images ./public",
     "cssmin": "sass --update ./src/styles:./public/styles --style compressed",
     "build": "npm run htmlmin & npm run copyImg & npm run cssmin",
     "start": "sass --watch ./src/styles:./public/styles"
