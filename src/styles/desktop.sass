@@ -85,11 +85,11 @@ main
 
   .price-formatted
     color: $color-blue
+    margin-right: 40px
 
 .price-formatted
   font-size: 38px
   font-weight: bold
-  margin-right: 40px
 
   & > *
     vertical-align: middle
@@ -123,6 +123,7 @@ main
     position: relative
     color: $color-gray
     padding: 0 5px
+    display: inline-block
 
     &:before
       content: ''
@@ -154,6 +155,13 @@ main
     display: block
     z-index: -1
 
+  &:after
+    content: '“'
+    font-size: 50px
+    position: absolute
+    top: 40px
+    left: 40px
+
   &:nth-child(1):before
     background-image: url('../images/purpleBubble.png')
     height: 65px
@@ -181,7 +189,9 @@ main
 
 .section-deliver,
 .section-story,
-.section-reach-customers
+.section-reach-customers,
+.section-achivements,
+.section-track
   text-align: center
   margin-bottom: 150px
 
@@ -276,6 +286,13 @@ main
     display: inline-block
     vertical-align: middle
 
+  .list
+    text-align: left
+    padding-right: 45px
+    padding-top: 45px
+    padding-bottom: 56px
+    border-right: 1px solid #c9c9c9
+
   .title-list
     font-size: 14px
     font-weight: bold
@@ -285,6 +302,9 @@ main
     list-style-type: none
     padding: 0
     margin: 0
+    padding-bottom: 50px
+    margin-bottom: 40px
+    border-bottom: 1px solid #cdcdcd
 
     li
       display: inline
@@ -294,4 +314,173 @@ main
 
       &:last-of-type:after
         content: ''
+
+  .price-container
+    display: flex
+    margin-bottom: 100px
+
+    .list
+      flex-shrink: 0
+      margin-top: 0
+
+    .price-info
+      padding-left: 53px
+      text-align: center
+      padding-top: 10px
+      padding-bottom: 10px
+
+    .price.old
+      margin-bottom: 5px
+
+    .price-formatted
+      color: $color-blue
+      margin-bottom: 30px
+
+    .btn
+      margin-bottom: 30px
+
+  .list,
+  .price-info
+    margin: 0
+
+.section-achivements
+  .title
+    margin-bottom: 50px
+    font-size: 24px
+
+  .achivements
+    display: flex
+    box-shadow: 0 0 14px 0 #dddddd
+    border-radius: 10px
+    background-color: white
+    margin-top: 51px
+    text-align: left
+
+    .achivement
+      padding: 51px 84px 52px 146px
+      position: relative
+      flex-grow: 1
+
+      &:nth-child(1)
+        border-right: 1px solid #dadada
+
+      &:before
+        content: ''
+        position: absolute
+        background: no-repeat url('../images/star.png')
+        width: 45px
+        height: 43px
+        display: inline-block
+        left: 10%
+
+
+    .achivement-title,
+    .achivement-date
+      margin: 0
+
+    .achivement-date
+      font-size: 18px
+
+.section-feedback
+  position: relative
+  padding-left: 117px
+  box-sizing: border-box
+  color: $color-text
+  margin-bottom: 150px
+
+  .feedback-author-img
+    position: absolute
+    left: 0
+    top: 0
+
+  .feedback-text
+    position: relative
+    margin-bottom: 16px
+
+    &:before
+      content: '“'
+      position: absolute
+      font-size: 50px
+      top: -35px
+      left: -35px
+
+  .feedback-author,
+  .feedback-author-position
+    font-weight: bold
+    color: #404b77
+    margin: 0
+
+  .feedback-author-position
+    font-size: 11px
+
+.section-track
+  .text
+    margin-bottom: 100px
+
+  .letters
+    text-align: left
+    position: relative
+    padding-top: 81px
+    padding-bottom: 50px
+
+    .letters-bg
+      background-image: linear-gradient(to bottom, #0b6af3, #108ef3)
+      border-radius: 20px
+      position: absolute
+      height: 100%
+      width: 150%
+      z-index: -1
+      top: 0
+      right: -63%
+
+  .letter
+    background-color: white
+    border: 1px solid #c4c4c4
+    border-radius: 5px
+    padding: 24px 30px
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+
+    &:before
+      content: ''
+      background-image: url('../images/checkbox.png')
+      background-size: contain
+      height: 30px
+      width: 30px
+      margin-right: 20px
+      display: inline-block
+
+    &.unchecked
+      background-color: rgba(255, 255, 255, 0.5)
+
+      &:before
+        background-image: url('../images/checkbox_empty.png')
+
+    .letter-title
+      flex-grow: 1
+
+    .letter-info
+      flex-basis: 42%
+
+    .letter-type,
+    .letter-source
+      text-transform: uppercase
+
+      &:before
+        color: rgba(37, 58, 122, 0.5)
+
+    .letter-type
+      padding-right: 20px
+      border-right: 1px solid #6c80ba
+
+      &:before
+        content: 'TYPE:'
+
+    .letter-source
+      padding-left: 20px
+
+      &:before
+        content: 'SOURCE:'
+
 
