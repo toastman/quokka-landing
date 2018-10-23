@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "htmlmin": "html-minifier ./src/index.html -o ./public/index.html --minify-css --collapse-whitespace --remove-comments",
+    "htmlmin": "html-minifier ./src/index.html -o ./public/index.html --minify-css --minify-js --collapse-whitespace --remove-comments",
     "copyImg": "cp -R ./src/images ./public",
     "cssmin": "sass --update ./src/styles:./public/styles --style compressed",
     "build": "npm run htmlmin & npm run copyImg & npm run cssmin",

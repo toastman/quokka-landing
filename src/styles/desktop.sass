@@ -10,6 +10,42 @@ main
 .text-center
   text-align: center
 
+#header-sticky
+  display: flex
+  border-bottom: 1px solid #dedede
+  padding: 34px 50px 36px
+  box-sizing: border-box
+  text-align: center
+  align-items: center
+  justify-content: space-between
+  position: fixed
+  top: -100%
+  transition: top 1s linear
+  left: 0
+  width: 100%
+  z-index: 10
+  background-color: white
+
+  &.active
+    top: 0
+
+  .title
+    font-weight: bold
+    text-transform: uppercase
+    letter-spacing: 0.5px
+    color: $color-title
+    margin: 0
+
+  .logo
+    padding: 0
+
+  .header-actions
+    display: flex
+    align-items: center
+
+    .btn-hint
+      margin-right: 30px
+
 .btn
   background-color: $color-btn
   text-transform: uppercase
@@ -78,7 +114,7 @@ main
 
   .bg-main
     position: absolute
-    top: -1%
+    top: -40px
     left: 35%
     width: 90%
 
@@ -356,6 +392,7 @@ main
     text-align: left
 
     .achivement
+      text-decoration: none
       padding: 51px 84px 52px 146px
       position: relative
       flex-grow: 1
@@ -372,12 +409,14 @@ main
         display: inline-block
         left: 10%
 
-    .achivement-title,
-    .achivement-date
-      margin: 0
+    .achivement-title
+      font-size: 24px
+      color: $color-title
+      font-weight: bold
 
     .achivement-date
       font-size: 18px
+      color: $color-text
 
 .section-feedback
   position: relative
