@@ -1,443 +1,353 @@
 @import './variables'
 
-main
-  max-width: 1440px
+@media screen and (min-device-width: 1025px)
+  main
+    max-width: 1440px
 
-#header-sticky
-  display: flex
-  border-bottom: 1px solid #dedede
-  padding: 34px 50px 36px
-  box-sizing: border-box
-  text-align: center
-  align-items: center
-  justify-content: space-between
-  position: fixed
-  top: -100%
-  transition: top 1s linear
-  left: 0
-  width: 100%
-  z-index: 10
-  background-color: white
-
-  &.active
-    top: 0
-
-  .title
-    font-weight: bold
-    text-transform: uppercase
-    letter-spacing: 0.5px
-    color: $color-title
-    margin: 0
-
-  .logo
-    padding: 0
-
-  .header-actions
+  #header-sticky
     display: flex
+    border-bottom: 1px solid #dedede
+    padding: 34px 50px 36px
+    box-sizing: border-box
+    text-align: center
     align-items: center
-
-    .btn-hint
-      margin-right: 30px
-
-.btn
-  & + .btn-hint
-    margin-top: 15px
-
-.btn-hint
-  font-size: 11px
-  color: $color-btn
-
-.content
-  max-width: 1060px
-
-.logo
-  padding: 50px
-
-.price-info
-  margin-bottom: 37px
-
-.title-main
-  font-size: 48px
-  font-weight: 500
-  color: $color-title
-  margin-top: 5px
-  margin-bottom: 15px
-
-.pre-title
-  font-size: 11px
-  text-transform: uppercase
-  font-weight: bold
-  letter-spacing: 0.6px
-  color: $color-title
-
-.section-main
-  margin-bottom: 153px
-  padding-right: 49%
-
-  .bg-main
-    position: absolute
-    top: -40px
-    left: 35%
-    width: 90%
-
-  .text
-    padding-bottom: 35px
-    border-bottom: 1px solid $color-devider
-
-  .price-formatted
-    color: $color-blue
-    margin-right: 40px
-
-.section-feedbacks-list
-  justify-content: space-between
-  margin-bottom: 150px
-
-.feedback-card
-  width: calc(50% - 10px)
-
-.section
-  margin-bottom: 150px
-
-  .title
-    font-size: 36px
-
-  .text
-    font-size: 18px
-    max-width: 642px
-    margin: 0 auto 65px
-
-.section-deliver
-  .img-plane
+    justify-content: space-between
+    position: fixed
+    top: -100%
+    transition: top 1s linear
+    left: 0
     width: 100%
-
-.section-story
-  .text
-    margin-bottom: 113px
-
-  .steps-list
-    margin-bottom: 100px
-
-.right-sided-quote
-  margin-left: 50%
-
-  .quote-title
-    font-size: 18px
-
-.section-video
-  margin-bottom: 142px
-
-  .video
-    height: 425px
-    width: 770px
-    margin-bottom: 50px
-
-  .customers
-    padding: 0 98px
-
-.section-integrations
-  text-align: center
-  margin-top: 150px
-
-  header
-    margin-bottom: 45px
-
-  .title
-    font-size: 18px
-    margin-right: 20px
-
-  .list
-    text-align: left
-    padding-right: 45px
-    padding-top: 45px
-    padding-bottom: 56px
-    border-right: 1px solid #c9c9c9
-
-  .title-list
-    font-size: 14px
-    font-weight: bold
-    margin: 0
-
-  .list-integrations
-    list-style-type: none
-    padding: 0
-    margin: 0
-    padding-bottom: 50px
-    margin-bottom: 40px
-    border-bottom: 1px solid #cdcdcd
-
-    li
-      display: inline
-
-      &:after
-        content: ','
-
-      &:last-of-type:after
-        content: ''
-
-  .price-container
-    margin-bottom: 100px
-
-    .list
-      flex-shrink: 0
-      margin-top: 0
-
-    .price-info
-      padding-left: 53px
-      text-align: center
-
-    .price.old
-      margin-bottom: 5px
-
-    .price-formatted
-      margin-bottom: 30px
-
-    .btn
-      margin-bottom: 30px
-
-  .list,
-  .price-info
-    margin: 0
-
-.section-achivements
-  .title
-    margin-bottom: 50px
-    font-size: 24px
-
-  .achivements
-    margin-top: 51px
-
-    .achivement
-      padding: 51px 84px 52px 146px
-
-      &:before
-        width: 45px
-        height: 43px
-        left: 10%
-
-    .achivement-title
-      font-size: 24px
-
-    .achivement-date
-      font-size: 18px
-
-.section-feedback
-  padding-left: 117px
-  margin-bottom: 150px
-
-  .feedback-text
-    margin-bottom: 16px
-
-    &:before
-      content: '“'
-      position: absolute
-      font-size: 50px
-      top: -35px
-      left: -35px
-
-  .feedback-author-position
-    font-size: 11px
-
-.section-track
-  .text
-    margin-bottom: 100px
-
-  .letters
-    text-align: left
-    position: relative
-    padding-top: 81px
-    padding-bottom: 50px
-    margin-bottom: 110px
-
-    .letters-bg
-      background-image: linear-gradient(to bottom, #0b6af3, #108ef3)
-      border-radius: 20px
-      position: absolute
-      height: 100%
-      width: 150%
-      z-index: -1
-      top: 0
-      right: -63%
-
-  .letter
+    z-index: 10
     background-color: white
-    border: 1px solid #c4c4c4
-    border-radius: 5px
-    padding: 24px 30px
-    display: flex
-    align-items: center
-    margin-bottom: 30px
-    font-weight: 500
 
-    &:before
-      content: ''
-      background-image: url('../images/checkbox.png')
-      background-size: contain
-      height: 30px
-      width: 30px
-      margin-right: 20px
-      display: inline-block
+    &.active
+      top: 0
 
-    &.unchecked
-      background-color: rgba(255, 255, 255, 0.5)
-
-      &:before
-        background-image: url('../images/checkbox_empty.png')
-
-    .letter-title
-      flex-grow: 1
-
-    .letter-info
-      flex-basis: 42%
-
-    .letter-type,
-    .letter-source
-      text-transform: uppercase
-
-      &:before
-        color: rgba(37, 58, 122, 0.5)
-
-    .letter-type
-      padding-right: 20px
-      border-right: 1px solid #6c80ba
-
-      &:before
-        content: 'TYPE:'
-
-    .letter-source
-      padding-left: 20px
-
-      &:before
-        content: 'SOURCE:'
-
-.offer-big
-  display: flex
-  align-items: center
-  box-shadow: 0 0 14px 0 #dddddd
-  background-color: white
-  padding: 43px 50px 44px
-  border-radius: 10px
-  text-align: center
-  margin-bottom: 30px
-
-  & > *
-    flex-grow: 1
-    flex-shrink: 0
-    border-right: 1px solid #979797
-
-  & > div:last-of-type
-    border: none
-
-  .offer-text
-    font-size: 30px
-    font-weight: bold
-    color: $color-title
-    text-align: left
-
-  .btn
-    padding-left: 64px
-    padding-right: 64px
-
-.phases
-  display: flex
-  color: $color-title
-  padding-bottom: 90px
-  border-bottom: 1px solid #cdcdcd
-
-  .phase
-    .phase-number
-      letter-spacing: 0.7px
-      font-size: 12px
+    .title
       font-weight: bold
       text-transform: uppercase
-      margin-top: 0
-      margin-bottom: 10px
+      letter-spacing: 0.5px
+      color: $color-title
+      margin: 0
 
-    .phase-title
-      font-size: 20px
-      font-weight: 500
-      margin-top: 0
-      margin-bottom: 20px
+    .logo
+      padding: 0
 
-    .phase-text
-      padding-bottom: 20px
-      margin-bottom: 20px
-      border-bottom: 1px solid #d7d7d7
-      min-height: 90px
-      font-size: 12px
-      font-weight: 500
-      color: #414b73
+    .header-actions
+      display: flex
+      align-items: center
 
-    .phase-integrations
-      font-size: 12px
+      .btn-hint
+        margin-right: 30px
 
-    .phase-number,
-    .phase-content
-      padding: 0 85px
-      box-sizing: border-box
+  .btn
+    & + .btn-hint
+      margin-top: 15px
 
-    &:nth-child(1)
-      max-width: 320px
+  .btn-hint
+    font-size: 11px
+    color: $color-btn
 
-      .phase-content
-        border-right: 1px solid #c9c9c9
+  .content
+    max-width: 1060px
 
-      .phase-number,
-      .phase-content
-        padding-left: 0
+  .logo
+    padding: 50px
 
-    &:nth-child(2)
-      max-width: 420px
+  .price-info
+    margin-bottom: 37px
 
-    &:nth-child(3)
-      max-width: 325px
-
-      .phase-content
-        border-left: 1px solid #c9c9c9
-
-      .phase-number,
-      .phase-content
-        padding-right: 0
-
-.list-faq
-  display: flex
-  justify-content: space-between
-  flex-wrap: wrap
-  text-align: left
-  margin-botoom: 38px
-
-  .faq
-    width: 50%
-    margin-bottom: 30px
-    max-width: 423px
-
-  .faq-title
-    font-size: 30px
+  .title-main
+    font-size: 48px
     font-weight: 500
     color: $color-title
+    margin-top: 5px
     margin-bottom: 15px
 
-  .faq-text
-    font-size: 18px
-    color: $color-text
+  .pre-title
+    font-size: 11px
+    text-transform: uppercase
+    font-weight: bold
+    letter-spacing: 0.6px
+    color: $color-title
 
-.m-b-100
-  margin-bottom: 100px
+  .section-main
+    margin-bottom: 153px
+    padding-right: 49%
 
-.section-roadmap
-  margin-bottom: 109px
+    .bg-main
+      position: absolute
+      top: -40px
+      left: 35%
+      width: 90%
 
-.section-faq
-  margin-bottom: 38px
+    .text
+      padding-bottom: 35px
+      border-bottom: 1px solid $color-devider
 
-footer
-  border-top: 1px solid #d1d1d1
-  text-align: center
-  padding: 69px 0 90px
+    .price-formatted
+      color: $color-blue
+      margin-right: 40px
 
-  img
-    height: 28px
-    margin-bottom: 15px
+  .section-feedbacks-list
+    justify-content: space-between
+    margin-bottom: 150px
 
-  p
-    font-size: 12px
-    color: #b4b9cd
+  .feedback-card
+    width: calc(50% - 10px)
+
+  .section
+    margin-bottom: 150px
+
+    .title
+      font-size: 36px
+
+    .text
+      font-size: 18px
+      max-width: 642px
+      margin: 0 auto 65px
+
+  .section-deliver
+    .img-plane
+      width: 100%
+
+  .section-story
+    .text
+      margin-bottom: 113px
+
+    .steps-list
+      margin-bottom: 100px
+
+  .right-sided-quote
+    margin-left: 50%
+
+    .quote-title
+      font-size: 18px
+
+  .section-video
+    margin-bottom: 142px
+
+    .video
+      height: 425px
+      width: 770px
+      margin-bottom: 50px
+
+    .customers
+      padding: 0 98px
+
+  .section-integrations
+    text-align: center
+    margin-top: 150px
+
+    header
+      margin-bottom: 45px
+
+    .title
+      font-size: 18px
+      margin-right: 20px
+
+    .list
+      text-align: left
+      padding-right: 45px
+      padding-top: 45px
+      padding-bottom: 56px
+      border-right: 1px solid #c9c9c9
+
+    .title-list
+      font-size: 14px
+      font-weight: bold
+      margin: 0
+
+    .list-integrations
+      list-style-type: none
+      padding: 0
+      margin: 0
+      padding-bottom: 50px
+      margin-bottom: 40px
+      border-bottom: 1px solid #cdcdcd
+
+      li
+        display: inline
+
+        &:after
+          content: ','
+
+        &:last-of-type:after
+          content: ''
+
+    .price-container
+      margin-bottom: 100px
+
+      .list
+        flex-shrink: 0
+        margin-top: 0
+
+      .price-info
+        padding-left: 53px
+        text-align: center
+
+      .price.old
+        margin-bottom: 5px
+
+      .price-formatted
+        margin-bottom: 30px
+
+      .btn
+        margin-bottom: 30px
+
+    .list,
+    .price-info
+      margin: 0
+
+  .section-achivements
+    .title
+      margin-bottom: 50px
+      font-size: 24px
+
+    .achivements
+      margin-top: 51px
+
+      .achivement
+        padding: 51px 84px 52px 146px
+
+        &:before
+          width: 45px
+          height: 43px
+          left: 10%
+
+      .achivement-title
+        font-size: 24px
+
+      .achivement-date
+        font-size: 18px
+
+  .section-feedback
+    padding-left: 117px
+    margin-bottom: 150px
+
+    .feedback-text
+      margin-bottom: 16px
+
+      &:before
+        content: '“'
+        position: absolute
+        font-size: 50px
+        top: -35px
+        left: -35px
+
+    .feedback-author-position
+      font-size: 11px
+
+  .section-track
+    .text
+      margin-bottom: 100px
+
+    .letters
+      padding-top: 81px
+      padding-bottom: 50px
+      margin-bottom: 110px
+
+      .letters-bg
+        width: 150%
+        right: -63%
+        height: 100%
+
+    .letter
+      padding: 24px 30px
+      margin-bottom: 30px
+
+      &:before
+        content: ''
+        height: 30px
+        width: 30px
+        margin-right: 20px
+
+      .letter-info
+        flex-basis: 42%
+
+      .letter-type
+        padding-right: 20px
+
+      .letter-source
+        padding-left: 20px
+
+  .offer-big
+    padding: 43px 50px 44px
+    margin-bottom: 30px
+
+    .offer-text
+      font-size: 30px
+
+    .btn
+      padding-left: 64px
+      padding-right: 64px
+
+  .phases
+    padding-bottom: 90px
+
+    .phase
+      .phase-number
+        font-size: 12px
+        margin-bottom: 10px
+
+      .phase-title
+        font-size: 20px
+
+      .phase-text
+        min-height: 90px
+
+      .phase-integrations
+        font-size: 12px
+
+      .phase-number,
+      .phase-content
+        padding: 0 85px
+
+      &:nth-child(1)
+        max-width: 320px
+
+        .phase-content
+          border-right: 1px solid #c9c9c9
+
+        .phase-number,
+        .phase-content
+          padding-left: 0
+
+      &:nth-child(2)
+        max-width: 420px
+
+      &:nth-child(3)
+        max-width: 325px
+
+        .phase-content
+          border-left: 1px solid #c9c9c9
+
+        .phase-number,
+        .phase-content
+          padding-right: 0
+
+  .list-faq
+    margin-botoom: 38px
+
+    .faq
+      margin-bottom: 30px
+      max-width: 423px
+
+    .faq-title
+      font-size: 30px
+      margin-bottom: 15px
+
+    .faq-text
+      font-size: 18px
+
+  .m-b-100
+    margin-bottom: 100px
+
+  .section-roadmap
+    margin-bottom: 109px
+
+  .section-faq
+    margin-bottom: 38px
+
+  footer
+    padding: 69px 0 90px

@@ -37,13 +37,13 @@
     vertical-align: middle
 
   .price
-    font-size: 54px
+    font-size: 1.9em
 
     .currency
-      font-size: 20px
+      font-size: 0.4em
 
     .sub-text
-      font-size: 14px
+      font-size: 0.2em
 
 .price
   font-size: 24px
@@ -313,3 +313,137 @@
     font-weight: bold
     color: #404b77
     margin: 0
+
+.section-track
+  .letters
+    text-align: left
+    position: relative
+
+    .letters-bg
+      background-image: linear-gradient(to bottom, #0b6af3, #108ef3)
+      border-radius: 20px
+      position: absolute
+      width: 150%
+      z-index: -1
+      top: 0
+      right: -63%
+
+  .letter
+    background-color: white
+    border: 1px solid #c4c4c4
+    border-radius: 5px
+    display: flex
+    align-items: center
+    font-weight: 500
+
+    &:before
+      content: ''
+      background-image: url('../images/checkbox.png')
+      background-size: contain
+      display: inline-block
+
+    &.unchecked
+      background-color: rgba(255, 255, 255, 0.5)
+
+      &:before
+        background-image: url('../images/checkbox_empty.png')
+
+    .letter-title
+      flex-grow: 1
+
+    .letter-type,
+    .letter-source
+      text-transform: uppercase
+
+      &:before
+        color: rgba(37, 58, 122, 0.5)
+
+    .letter-type
+      border-right: 1px solid #6c80ba
+
+      &:before
+        content: 'TYPE: '
+
+    .letter-source
+
+      &:before
+        content: 'SOURCE: '
+
+.offer-big
+  display: flex
+  align-items: center
+  box-shadow: 0 0 14px 0 #dddddd
+  background-color: white
+  border-radius: 10px
+  text-align: center
+
+  & > *
+    flex-grow: 1
+    flex-shrink: 0
+    border-right: 1px solid #979797
+
+  & > div:last-of-type
+    border: none
+
+  .offer-text
+    font-weight: bold
+    color: $color-title
+    text-align: left
+
+.phases
+  display: flex
+  color: $color-title
+  border-bottom: 1px solid #cdcdcd
+
+  .phase
+    .phase-number
+      letter-spacing: 0.7px
+      font-weight: bold
+      text-transform: uppercase
+      margin-top: 0
+
+    .phase-title
+      font-weight: 500
+      margin-top: 0
+      color: $color-title
+      margin-bottom: 20px
+
+    .phase-text
+      border-bottom: 1px solid #d7d7d7
+      font-weight: 500
+      color: #414b73
+      font-size: 12px
+      padding-bottom: 20px
+      margin-bottom: 20px
+
+    .phase-number,
+    .phase-content
+      box-sizing: border-box
+
+.list-faq
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  text-align: left
+
+  .faq
+    width: 50%
+
+  .faq-title
+    font-weight: 500
+    color: $color-title
+
+  .faq-text
+    color: $color-text
+
+footer
+  border-top: 1px solid #d1d1d1
+  text-align: center
+
+  img
+    height: 28px
+    margin-bottom: 15px
+
+  p
+    font-size: 12px
+    margin: 0 20px
