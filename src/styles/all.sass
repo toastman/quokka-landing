@@ -130,6 +130,9 @@
   text-align: center
   position: relative
 
+  img
+    width: 90px
+
   &:before
     background-size: contain
     content: ''
@@ -189,6 +192,7 @@
   .step
     img
       margin-bottom: 20px
+      max-width: 300px
     p
       font-size: 12px
       font-weight: 500
@@ -205,6 +209,7 @@
     position: absolute
     left: 0
     top: 0
+    max-width: 30px
 
   .quote-title
     font-weight: 500
@@ -222,6 +227,12 @@
     justify-content: space-between
     align-items: center
 
+    a
+      pointer-events: none
+
+    img
+      max-height: 28px
+
 .section-integrations
   color: $color-title
 
@@ -234,6 +245,9 @@
   .link
     display: inline-block
     vertical-align: middle
+
+    img
+      max-height: 31px
 
   .list
     text-align: left
@@ -281,6 +295,9 @@
     margin: 0
 
 .section-achivements
+  img
+    max-height: 45px
+
   .achivements
     display: flex
     box-shadow: 0 0 14px 0 #dddddd
@@ -319,6 +336,7 @@
     position: absolute
     left: 0
     top: 0
+    max-width: 65px
 
   .feedback-text
     position: relative

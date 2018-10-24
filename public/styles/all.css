@@ -113,6 +113,8 @@
   padding: 60px 99px 40px;
   text-align: center;
   position: relative; }
+  .feedback-card img {
+    width: 90px; }
   .feedback-card:before {
     background-size: contain;
     content: "";
@@ -160,7 +162,8 @@
 .section-story .steps-list {
   display: flex; }
 .section-story .step img {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  max-width: 300px; }
 .section-story .step p {
   font-size: 12px;
   font-weight: 500;
@@ -175,7 +178,8 @@
   .right-sided-quote .quote-icon {
     position: absolute;
     left: 0;
-    top: 0; }
+    top: 0;
+    max-width: 30px; }
   .right-sided-quote .quote-title {
     font-weight: 500;
     margin-top: 5px;
@@ -189,6 +193,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    .section-video .customers a {
+      pointer-events: none; }
+    .section-video .customers img {
+      max-height: 28px; }
 
 .section-integrations {
   color: #2c365c; }
@@ -200,6 +208,8 @@
   .section-integrations .link {
     display: inline-block;
     vertical-align: middle; }
+    .section-integrations .link img {
+      max-height: 31px; }
   .section-integrations .list {
     text-align: left; }
   .section-integrations .title-list {
@@ -234,6 +244,8 @@
   .section-integrations .price-info {
     margin: 0; }
 
+.section-achivements img {
+  max-height: 45px; }
 .section-achivements .achivements {
   display: flex;
   box-shadow: 0 0 14px 0 #dddddd;
@@ -265,7 +277,8 @@
   .section-feedback .feedback-author-img {
     position: absolute;
     left: 0;
-    top: 0; }
+    top: 0;
+    max-width: 65px; }
   .section-feedback .feedback-text {
     position: relative; }
     .section-feedback .feedback-text:before {
