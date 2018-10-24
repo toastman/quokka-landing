@@ -17,10 +17,7 @@
       flex-flow: column-reverse; }
     .section-main .title-main {
       font-size: 40px;
-      font-weight: 500;
-      color: #2c365c;
-      margin: 0;
-      margin-bottom: 15px; }
+      margin: 0; }
     .section-main .text {
       padding-bottom: 30px;
       max-width: 487px;

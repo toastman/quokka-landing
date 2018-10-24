@@ -1,10 +1,20 @@
 @import './variables'
 
-.tablet-only
+.tablet-only,
+.desktop-only,
+.mobile-only
   display: none
 
 @media screen and (min-device-width: 768px) and (max-width: 1024px)
   .tablet-only
+    display: block
+
+@media screen and (min-device-width: 1025px)
+  .desktop-only
+    display: block
+
+@media screen and (min-width: 320px) and (max-width: 767px)
+  .mobile-only
     display: block
 
 .btn
@@ -19,6 +29,11 @@
 
 .logo
   padding: 50px
+
+.title-main
+  font-weight: 500
+  color: $color-title
+  margin-bottom: 15px
 
 .content
   margin: 0 auto
@@ -53,7 +68,7 @@
   .currency,
   .sub-text
     font-weight: 500
-    font-size: 12px
+    font-size: 0.5em
 
   .currency
     vertical-align: super
