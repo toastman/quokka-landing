@@ -29,6 +29,9 @@
       letter-spacing: 0.5px
       color: $color-title
       margin: 0
+      position: absolute
+      width: 100%
+      text-align: center
 
     .logo
       padding: 0
@@ -80,7 +83,16 @@
 
     .text
       padding-bottom: 35px
-      border-bottom: 1px solid $color-devider
+      position: relative
+
+      &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 150%
+        border-bottom: 1px solid $color-devider
+
 
     .price-formatted
       color: $color-blue
@@ -328,14 +340,14 @@
 
     .faq
       margin-bottom: 30px
-      max-width: 423px
+      max-width: 470px
 
     .faq-title
-      font-size: 30px
+      font-size: 24px
       margin-bottom: 15px
 
     .faq-text
-      font-size: 18px
+      font-size: 14px
 
   .m-b-100
     margin-bottom: 100px

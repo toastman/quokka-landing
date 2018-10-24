@@ -52,13 +52,15 @@
     vertical-align: middle
 
   .price
-    font-size: 1.9em
+    font-size: 1.422em
 
     .currency
       font-size: 0.4em
+      margin-right: 2px
 
     .sub-text
-      font-size: 0.2em
+      font-size: 0.26em
+      margin-left: 2px
 
 .price
   font-size: 24px
@@ -81,6 +83,7 @@
     color: $color-gray
     padding: 0 5px
     display: inline-block
+    white-space: nowrap
 
     &:before
       content: ''
@@ -110,6 +113,10 @@
       width: 20px
       background: no-repeat url('../images/Check 1x.png')
       background-size: contain
+
+.section-main
+  .text
+    color: $color-text
 
 .section-feedbacks-list
   display: flex

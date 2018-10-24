@@ -17,7 +17,7 @@
       flex-flow: column-reverse; }
     .section-main .title-main {
       font-size: 40px;
-      margin: 0; }
+      margin-top: 0; }
     .section-main .text {
       padding-bottom: 30px;
       max-width: 487px;
@@ -34,10 +34,14 @@
       margin-left: -150px;
       top: 0;
       left: 0;
-      width: auto; }
+      width: auto;
+      margin-bottom: 62px; }
     .section-main .price-formatted {
       color: #108ef3;
       margin-right: 40px; }
+    .section-main .price-info {
+      margin-bottom: 37px;
+      text-align: left; }
     .section-main .tablet-only {
       text-align: left;
       padding-bottom: 51px;
@@ -104,14 +108,14 @@
     margin-top: 86px;
     margin-bottom: 55px; }
     .section-integrations header {
-      margin-bottom: 28px; }
+      margin-bottom: 18px; }
     .section-integrations .title {
       font-size: 15px;
       margin-right: 15px; }
     .section-integrations .list {
       padding-right: 45px;
       padding-top: 30px;
-      padding-bottom: 30px; }
+      padding-bottom: 50px; }
     .section-integrations .link {
       height: 23px; }
       .section-integrations .link img {
@@ -248,7 +252,9 @@
       .section-roadmap .phases .phase:nth-child(3) {
         margin-left: 25%; }
         .section-roadmap .phases .phase:nth-child(3) .phase-text {
-          min-height: auto; }
+          min-height: auto;
+          max-width: 240px;
+          margin: 0 auto; }
 
   .list-faq {
     margin-botoom: 38px; }
@@ -256,10 +262,10 @@
       margin-bottom: 30px;
       max-width: 275px; }
     .list-faq .faq-title {
-      font-size: 24px;
+      font-size: 20px;
       margin-bottom: 12px; }
     .list-faq .faq-text {
-      font-size: 18px; }
+      font-size: 12px; }
 
   footer {
     padding: 50px 0 90px; } }

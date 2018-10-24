@@ -17,18 +17,20 @@
     margin-top: 0; }
 
   .link-open-on-desktop {
+    pointer-events: none;
     display: inline-block;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
     color: #2c365c;
-    padding: 16px 12px;
+    padding: 16px 20px 16px 12px;
     text-decoration: none;
     border: 2px solid #dadada;
     border-radius: 5px;
-    background-color: #fafbff; }
+    background-color: #fafbff;
+    white-space: nowrap; }
     .link-open-on-desktop img {
-      margin-right: 28px; }
+      margin-right: 20px; }
     .link-open-on-desktop > * {
       vertical-align: middle; }
 

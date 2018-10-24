@@ -46,11 +46,13 @@
   .price-formatted > * {
     vertical-align: middle; }
   .price-formatted .price {
-    font-size: 1.9em; }
+    font-size: 1.422em; }
     .price-formatted .price .currency {
-      font-size: 0.4em; }
+      font-size: 0.4em;
+      margin-right: 2px; }
     .price-formatted .price .sub-text {
-      font-size: 0.2em; }
+      font-size: 0.26em;
+      margin-left: 2px; }
 
 .price {
   font-size: 24px;
@@ -68,7 +70,8 @@
     position: relative;
     color: #cacaca;
     padding: 0 5px;
-    display: inline-block; }
+    display: inline-block;
+    white-space: nowrap; }
     .price.old:before {
       content: "";
       position: absolute;
@@ -95,6 +98,9 @@
       width: 20px;
       background: no-repeat url("../images/Check 1x.png");
       background-size: contain; }
+
+.section-main .text {
+  color: #48578e; }
 
 .section-feedbacks-list {
   display: flex; }

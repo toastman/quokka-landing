@@ -25,7 +25,10 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
       color: #2c365c;
-      margin: 0; }
+      margin: 0;
+      position: absolute;
+      width: 100%;
+      text-align: center; }
     #header-sticky .logo {
       padding: 0; }
     #header-sticky .header-actions {
@@ -71,7 +74,14 @@
       width: 90%; }
     .section-main .text {
       padding-bottom: 35px;
-      border-bottom: 1px solid #d3d3d3; }
+      position: relative; }
+      .section-main .text:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 150%;
+        border-bottom: 1px solid #d3d3d3; }
     .section-main .price-formatted {
       color: #108ef3;
       margin-right: 40px; }
@@ -262,12 +272,12 @@
     margin-botoom: 38px; }
     .list-faq .faq {
       margin-bottom: 30px;
-      max-width: 423px; }
+      max-width: 470px; }
     .list-faq .faq-title {
-      font-size: 30px;
+      font-size: 24px;
       margin-bottom: 15px; }
     .list-faq .faq-text {
-      font-size: 18px; }
+      font-size: 14px; }
 
   .m-b-100 {
     margin-bottom: 100px; }
