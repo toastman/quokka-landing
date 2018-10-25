@@ -28,7 +28,8 @@
       margin: 0;
       position: absolute;
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      left: 0; }
     #header-sticky .logo {
       padding: 0; }
     #header-sticky .header-actions {
