@@ -22,6 +22,8 @@
   font-weight: bold;
   padding: 18px 19px 18px 21px;
   border-radius: 5px; }
+  .btn:hover {
+    background-color: #0067ef; }
 
 .logo {
   padding: 50px; }
@@ -96,7 +98,7 @@
       margin-right: 15px;
       height: 20px;
       width: 20px;
-      background: no-repeat url("../images/Check 1x.png");
+      background: no-repeat url("../images/Check 2x.png");
       background-size: contain; }
 
 .section-main .text {
@@ -128,13 +130,13 @@
     top: 40px;
     left: 40px; }
   .feedback-card:nth-child(1):before {
-    background-image: url("../images/purpleBubble.png");
+    background-image: url("../images/purpleBubble_2x.png");
     height: 65px;
     width: 67px;
     top: -32px;
     left: -16px; }
   .feedback-card:nth-child(2):before {
-    background-image: url("../images/purpleBubble2.png");
+    background-image: url("../images/purpleBubble2_2x.png");
     height: 32px;
     width: 75px;
     bottom: -16px;
@@ -261,7 +263,7 @@
     .section-achivements .achivements .achivement:before {
       content: "";
       position: absolute;
-      background: no-repeat url("../images/star.png");
+      background: no-repeat url("../images/star_2x.png");
       background-size: contain;
       display: inline-block; }
   .section-achivements .achivements .achivement-title {
@@ -313,13 +315,13 @@
   font-weight: 500; }
   .section-track .letter:before {
     content: "";
-    background-image: url("../images/checkbox.png");
+    background-image: url("../images/checkbox_2x.png");
     background-size: contain;
     display: inline-block; }
   .section-track .letter.unchecked {
     background-color: rgba(255, 255, 255, 0.5); }
     .section-track .letter.unchecked:before {
-      background-image: url("../images/checkbox_empty.png"); }
+      background-image: url("../images/checkbox_empty_2x.png"); }
   .section-track .letter .letter-title {
     flex-grow: 1; }
   .section-track .letter .letter-type,
